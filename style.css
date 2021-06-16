@@ -32,12 +32,19 @@ a {
   font-family: titles;
 }
 
+img {
+  max-width: 98%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
 .grid {
   display: grid;
   background-color: whitesmoke;
   min-height: 1vh;
   grid-template-columns: 1fr;
-  grid-template-rows: 40px 300px 1fr 1fr 30px; 
+  grid-template-rows: 40px 300px 1fr 2fr 30px; 
   grid-template-areas: 
   "title"
   "header"
@@ -60,6 +67,23 @@ a {
   ". right ."
   ". . ."
   ". download ."
+  "footer footer footer"; 
+}
+
+.i_grid {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 40px 300px 10px 350px 1fr 10px 350px 1fr 10px auto 30px; 
+  grid-template-areas: 
+  "title title title"
+  "header header header"
+  ". . ."
+  ". image1 ."
+  ". left ."
+  ". . ."
+  ". image2 ."
+  ". right ."
   "footer footer footer"; 
 }
 
@@ -113,7 +137,22 @@ a {
   grid-template-rows: 5% 95%; 
   grid-template-areas: 
   "pTitle"
-  "display1";
+  "display1"
+  "display2";
+}
+
+.image1 {
+  grid-area: image1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image2 {
+  grid-area: image2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pTitle {
@@ -125,8 +164,17 @@ a {
   align-items: center;
 }
 
-.display1{
+.display1 {
   grid-area: display1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.display2 {
+  grid-area: display2;
 
   display: flex;
   flex-direction: column;
@@ -220,6 +268,7 @@ a {
 
   .project {
   width: 33%;
+  height: 50%;
   padding: 5px;
   border-style: groove;
   display: flex;
@@ -230,6 +279,7 @@ a {
 
   .display1 {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .p_grid {
@@ -247,4 +297,20 @@ a {
   "footer footer footer footer";
   }
 
+  .i_grid {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 5% 45% 45% 5%;
+  grid-template-rows: 40px 300px 10px 1fr 10px auto 30px; 
+  grid-template-areas: 
+  "title title title title"
+  "header header header header"
+  ". . . ."
+  ". image1 left ."
+  ". . . ."
+  ". right image2 ."
+  "footer footer footer footer";
+  }
+
 }
+
