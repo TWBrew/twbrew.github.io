@@ -39,6 +39,13 @@ img {
   height: auto;
 }
 
+video {
+  max-width: 98%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
 .grid {
   display: grid;
   background-color: whitesmoke;
@@ -84,6 +91,25 @@ img {
   ". . ."
   ". image2 ."
   ". right ."
+  "footer footer footer"; 
+}
+
+.ip_grid {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 40px 300px 10px 350px 1fr 10px 350px 1fr 10px auto 30px; 
+  grid-template-areas: 
+  "title title title"
+  "header header header"
+  ". . ."
+  ". image1 ."
+  ". left ."
+  ". . ."
+  ". image2 ."
+  ". right ."
+  ". . ."
+  ". download ."
   "footer footer footer"; 
 }
 
@@ -309,6 +335,23 @@ img {
   ". image1 left ."
   ". . . ."
   ". right image2 ."
+  "footer footer footer footer";
+  }
+
+  .ip_grid {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 5% 45% 45% 5%;
+  grid-template-rows: 40px 300px 10px 1fr 10px 1fr 10px auto 30px; 
+  grid-template-areas: 
+  "title title title title"
+  "header header header header"
+  ". . . ."
+  ". image1 left ."
+  ". . . ."
+  ". right image2 ."
+  ". . . ."
+  ". download download ."
   "footer footer footer footer";
   }
 
