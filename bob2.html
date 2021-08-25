@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio - Bob v.2</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <div class="ip_grid">
+      <div class="title" style="cursor: pointer;" onclick="window.location='https://ThomasBrewittPortfolio.thomasbrewitt.repl.co/index.html';">
+        
+        <div>
+          <p>Thomas Brewitt - Portfolio</p>
+        </div>
+
+        <div class="navbar">
+          <p>Projects</p>
+        </div>
+
+        <!--
+        <div class="navbar">
+          <a href='index.html'>Home</a>
+          <a href='bob.html'>"Reg" v.1</a>
+        </div>
+        -->
+
+      </div>
+
+      <div class="header">
+        
+        <h1 class="webnar">Bob v.2</h1>
+
+        <h4 class="webnar">Board Game Assistant</h4>
+      
+      </div>
+
+      <div class="image1">
+        To Do
+        <!-- <video controls>
+          <source src="images/Bob1Video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video> -->
+      </div>
+
+      <div class="left">
+        <h3 class="webnar">Overview</h3>
+
+        <p>
+          As with the original Bob, Bob v.2 is designed to answer questions about board games. Unlike the original however, he is not limited to specifically formatted rulebooks and is capable of giving short and specific answers to questions rather than simply reading the entirety of a passage included in the rulebook. 
+        </p>
+      </div>
+
+      <div class="image2">
+        <img src="images/Reg2Code.png" alt="Screenshot of some code">
+      </div>
+
+      <div class="right">
+        <h3 class="webnar">How it works</h3>
+
+        <p>
+          All of Bob's functions unrelated to the answering of questions works the same as in version 1, the only difference now being how he finds the proper response to give to a question. Now, instead of searching for a matching header, Bob now uses a method called "inverse document frequency" as well as "query term density" in order to scan the rules for the most pertinent sentence to the question. When Bob is first initialized, he calculated the inverse document frequency (idf) for each and every word used in all of the rulebooks that he has available to him. The idf of each word allows bob to figure out which words are the most important (appear in a small ammount of rulebooks only a few times), and which are simply common words to be expected in sentences (appear in most rulebooks many times). Once a question is asked of him, Bob will look through each sentence of the selected rulebook for the sentence that has the highest total idf value counting only words that appear in the question, and then calculate its query term density by determining what percentage of the words in the sentence are words used in the question. Once these counts are tallied, if there is only one sentence with the highest total idf value (which is uncommon), Bob will give that sentence as an answer. In the much more likely case of ties, he will break the tie with the query term density, giving the most dense sentence as his answer.
+        </p>
+      </div>
+
+      <div class="download">
+        <h3 class="webnar">Download</h3>
+
+        <a href="projects/Reg_v2.zip" download>
+          Click here to download the python file of this project!
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer">
+
+        <p class="small">Gmail: twbrewitt@gmail.com</p>
+        <div class="spacer"></div>
+        <p class="small">Phone: 617-981-2060</p>
+
+
+      </div>
+
+
+  </body>
+</html>
