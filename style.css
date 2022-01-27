@@ -39,27 +39,6 @@ img {
   height: auto;
 }
 
-video {
-  max-width: 98%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-}
-
-.grid {
-  display: grid;
-  background-color: whitesmoke;
-  min-height: 1vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: 40px 300px 1fr 2fr 30px; 
-  grid-template-areas: 
-  "title"
-  "header"
-  "sidebar"
-  "content"
-  "footer";
-}
-
 .p_grid {
   display: grid;
   min-height: 100vh;
@@ -124,19 +103,10 @@ video {
   top: 0;
 }
 
-.navbar {
-  display: flex;
-  padding: 10px;
-  max-width: 200px;
-  justify-self: flex-end;
-  justify-content: space-evenly;
-  width: 20%
-}
-
 .header {
   background-image: url("images/AHeader.jpg");
   background-position: center;
-  grid-area: header;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -3,85 +3,113 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Portfolio - Bob v.1</title>
+    <title>Thomas Brewitt - Portfolio</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </head>
+
   <body>
-
-    <div class="ip_grid">
-      <div class="title" style="cursor: pointer;" onclick="window.location='https://ThomasBrewittPortfolio.thomasbrewitt.repl.co/index.html';">
-        
-        <div>
-          <p>Thomas Brewitt - Portfolio</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dice.html">Die Roller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rebcalc.html">Battle Calc.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="FIRST.html">FIRST</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Reg Projects
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item active" aria-current="page" href="bob1.html">Version 1</a></li>
+                <li><a class="dropdown-item" href="bob2.html">Version 2</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-
-        <div class="navbar">
-          <p>Projects</p>
-        </div>
-
-        <!--
-        <div class="navbar">
-          <a href='index.html'>Home</a>
-          <a href='bob.html'>"Reg" v.1</a>
-        </div>
-        -->
-
       </div>
+  </nav>
 
+  <div class="container-fluid">
+    <div class="row">
       <div class="header">
+          
+          <h1 class="webnar">Bob v.1</h1>
+
+          <h4 class="webnar">Board Game Assistant</h4>
         
-        <h1 class="webnar">Bob v.1</h1>
-
-        <h4 class="webnar">Board Game Assistant</h4>
-      
       </div>
+    </div>
+  </div>
 
-      <div class="image1">
-        <video controls>
-          <source src="images/Bob1Video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        TODO
       </div>
-
-      <div class="left">
+      <div class="col my-auto" align="center">
         <h3 class="webnar">Overview</h3>
 
         <p>
           Bob, (originally called "Reg") taking inspiration from such home assistants as Amazon's Alexa, is designed to be your personal assistant for all of your board games. When given an image of a rulebook, Bob can respond to your questions about the corresponding game's rules whenever you say "Hey Bob!" As version 1 of Bob, he is fairly limited in his ability to read the rules and respond to questions, but he will continue to be improved as time goes on.
         </p>
       </div>
-
-      <div class="image2">
-        <img src="images/Reg1Code.png" alt="Screenshot of some code">
-      </div>
-
-      <div class="right">
+    </div>
+    <div class="row">
+      <div class="col my-auto" align="center">
         <h3 class="webnar">How it works</h3>
 
         <p>
           To work, Bob needs two things, a PDF file of the rules for any games you'd like his help with, and access to a microphone. First, Bob converts the PDFs of any rules you've given him into plain text so that he can read them better. From there, he waits in a listening loop until he hears his name, at which point he will prompt you for a question. Once a response is given, he will look for a section in the rulebook text that has a title that matches one of the words in your question, and reads the following information about it to you.
         </p>
       </div>
-
-      <div class="download">
-        <h3 class="webnar">Download</h3>
-
-        <a href="projects/Reg_v1.zip" download>
-          Click here to download the python file of this project!
-        </a>
+      <div class="col my-auto">
+        <img src="images/Reg1Code.png" class="img-fluid" alt="Project's Code">
       </div>
-
     </div>
 
-    <div class="footer">
+    <br>
 
-        <p class="small">Gmail: twbrewitt@gmail.com</p>
-        <div class="spacer"></div>
-        <p class="small">Phone: 617-981-2060</p>
+    <div class="row">
+      <div class="col" align="center">
+        <h3 class="webnar">Download</h3>
 
-
+        <a href="projects/Rev_v1.zip" download>
+          Click here to download the python file of this project! (Not Properly Working)
+        </a>
       </div>
+    </div>
 
+  </div>
+
+  
+
+  <nav class="navbar sticky-bottom navbar-light bg-light">
+    <span class="navbar-text">
+      Email: twbrewitt@gmail.com
+    </span>
+    <span class="navbar-text">
+      Phone: 617-981-2060
+    </span>
+  </nav>
+
+  
+    
 
   </body>
 </html>

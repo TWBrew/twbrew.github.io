@@ -3,74 +3,101 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Portfolio - Die Roller</title>
+    <title>Thomas Brewitt - Portfolio</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </head>
+
   <body>
-
-    <div class="i_grid">
-      <div class="title" style="cursor: pointer;" onclick="window.location='https://ThomasBrewittPortfolio.thomasbrewitt.repl.co/index.html';">
-        
-        <div>
-          <p>Thomas Brewitt - Portfolio</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="dice.html">Die Roller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rebcalc.html">Battle Calc.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="FIRST.html">FIRST</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Reg Projects
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="bob1.html">Version 1</a></li>
+                <li><a class="dropdown-item" href="bob2.html">Version 2</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-
-        <div class="navbar">
-          <p>Projects</p>
-        </div>
-
-        <!--
-        <div class="navbar">
-          <a href='index.html'>Home</a>
-          <a href='bob.html'>"Reg" v.1</a>
-        </div>
-        -->
-
       </div>
+  </nav>
 
+  <div class="container-fluid">
+    <div class="row">
       <div class="header">
+          
+          <h1 class="webnar">Arduino Die Roller</h1>
+
+          <h4 class="webnar">Mechanical Dice Shaker</h4>
         
-        <h1 class="webnar">Arduino Die Roller</h1>
-
-        <h4 class="webnar">Mechanical Dice Shaker</h4>
-      
       </div>
+    </div>
+  </div>
 
-      <div class="image1">
-        <img src="images/Die_Roller.jpg" alt="Die Roller" width="500" height="250">
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col my-auto">
+        <img src="images/Die_Roller.jpg" class="img-fluid" alt="Die Roller">
       </div>
-
-      <div class="left">
+      <div class="col my-auto" align="center">
         <h3 class="webnar">Overview</h3>
 
         <p>
           The Auto Die Roller was my first project using an Arduino. It was made for a project in my Computer Science class and ended up becoming my most frequently used creation. Whether it's rolling for neutral countries in Triumph and Tragedy, the GCDS in Eclipse, or even the Borg Collective from Star Trek: Ascendancy, it has made many friends, but many, many more enemies.
         </p>
       </div>
-
-      <div class="image2">
-        <img src="images/Roller_Construction.jpg" alt="Spring Assembly of Die Roller" width="500" height="250">
-      </div>
-
-      <div class="right">
+    </div>
+    <div class="row">
+      <div class="col my-auto" align="center">
         <h3 class="webnar">Spring Design Choices</h3>
 
         <p>
           I chose to use two springs glued together to make the base of the die roller chiefly for cost efficiency. I already had access to a large assortment of small springs and a hot-glue gun, but these smaller springs were not large enough to hold the vibration motor far enough off of the table. From here, I had two options, either A, purchase larger springs, or B, create larger springs. Not wanting to spend more than was necessary, I tested the strength and flexibility of two springs glued together and found that they were perfectly capable of supporting the motor and the dish, as well as being able to withstand significant vibration, and so opted to use the cheaper makeshift springs that did the job well instead of the more expensive actual larger springs that would likely do the job only marginally better.
         </p>
       </div>
-
+      <div class="col my-auto">
+        <img src="images/Roller_Construction.jpg" class="img-fluid" alt="Die Roller">
+      </div>
     </div>
 
-    <div class="footer">
+  </div>
 
-        <p class="small">Gmail: twbrewitt@gmail.com</p>
-        <div class="spacer"></div>
-        <p class="small">Phone: 617-981-2060</p>
+  
 
+  <nav class="navbar sticky-bottom navbar-light bg-light">
+    <span class="navbar-text">
+      Email: twbrewitt@gmail.com
+    </span>
+    <span class="navbar-text">
+      Phone: 617-981-2060
+    </span>
+  </nav>
 
-      </div>
-
+  
+    
 
   </body>
 </html>
